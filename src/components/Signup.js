@@ -61,6 +61,7 @@ const Signup = () => {
         if (Object.keys(errors).length === 0) {
             // Form submission logic here 
             console.log('Form data:', { username, email, password });
+
         }
     };
 
@@ -120,7 +121,7 @@ const Signup = () => {
                                 name="username"
                                 value={username}
                                 onChange={handleChange}
-                                id="usernameInput"
+                                id="username"
                             />
                         </label>
                         {formErrors.username && <span>{formErrors.username}</span>}
@@ -131,7 +132,7 @@ const Signup = () => {
                                 placeholder="Email"
                                 value={email}
                                 onChange={handleChange}
-                                id="emailInput"
+                                id="email"
 
                             />
                         </label>
@@ -144,7 +145,7 @@ const Signup = () => {
                                 name="password"
                                 value={password}
                                 onChange={handleChange}
-                                id="passwordInput"
+                                id="password"
                             />
                         </label>
                         {formErrors.password && <span>{formErrors.password}</span>}
