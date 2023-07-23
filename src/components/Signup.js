@@ -149,7 +149,7 @@ const Signup = () => {
                         </label>
                         {formErrors.password && <span>{formErrors.password}</span>}
 
-                        <button className="btn btn-second">Sign up</button>
+                        <button type="submit" className="btn btn-second">Sign up</button>
 
                     </form>
                     {/* form ends */}
